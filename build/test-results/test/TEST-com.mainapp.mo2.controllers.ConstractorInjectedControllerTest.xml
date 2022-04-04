@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.mainapp.mo2.controllers.ConstractorInjectedControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-03T12:54:43" hostname="DESKTOP-EG62IRN" time="0.021">
+<testsuite name="com.mainapp.mo2.controllers.ConstractorInjectedControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-03T23:55:47" hostname="DESKTOP-EG62IRN" time="0.002">
   <properties/>
-  <testcase name="shouldReturnHelloWorld()" classname="com.mainapp.mo2.controllers.ConstractorInjectedControllerTest" time="0.021"/>
+  <testcase name="shouldReturnHelloWorld()" classname="com.mainapp.mo2.controllers.ConstractorInjectedControllerTest" time="0.002"/>
   <system-out><![CDATA[Hello world
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
