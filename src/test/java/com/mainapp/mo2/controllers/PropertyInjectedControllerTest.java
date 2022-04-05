@@ -1,17 +1,15 @@
 package com.mainapp.mo2.controllers;
 
-import com.mainapp.mo2.services.GreetingServiceImpl;
+import com.mainapp.mo2.services.ConstructorGreetingServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PropertyInjectedControllerTest {
     PropertyInjectedController controller;
     @BeforeEach
     void setUp(){
         controller = new PropertyInjectedController();
-        controller.greetingService = new GreetingServiceImpl();
+        controller.greetingService = new ConstructorGreetingServiceImpl();
     }
     @Test
     void getGreeting() {

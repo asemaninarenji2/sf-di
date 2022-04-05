@@ -1,6 +1,6 @@
 package com.mainapp.mo2.controllers;
 
-import com.mainapp.mo2.services.GreetingServiceImpl;
+import com.mainapp.mo2.services.ConstructorGreetingServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -8,7 +8,7 @@ class ConstructorInjectedControllerTest {
     ConstructorInjectedController controller;
     @BeforeEach
     void SetUp(){
-        controller =new ConstructorInjectedController(new GreetingServiceImpl());
+        controller =new ConstructorInjectedController(new ConstructorGreetingServiceImpl());
 
     }
     @Test

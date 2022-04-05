@@ -1,9 +1,6 @@
 package com.mainapp.mo2;
 
-import com.mainapp.mo2.controllers.ConstructorInjectedController;
-import com.mainapp.mo2.controllers.MyController;
-import com.mainapp.mo2.controllers.PropertyInjectedController;
-import com.mainapp.mo2.controllers.SetterInjectedController;
+import com.mainapp.mo2.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -15,8 +12,8 @@ public class Application {
 		ApplicationContext ctx = SpringApplication.run(Application.class, args);
 		MyController myController = (MyController) ctx.getBean("myController");
 
-		String greeting = myController.sayHello();
-		System.out.println(greeting);
+		myController.sayHello();
+
 
 		System.out.println(">>>property:");
 		PropertyInjectedController propertyInjectedController =
@@ -33,6 +30,10 @@ public class Application {
 				(ConstructorInjectedController) ctx.getBean("constructorInjectedController");
 		System.out.println(">>>>Constructor");
 		System.out.println(constructorInjectedController.getGreetingService().sayGreeting());
+
+		System.out.println("<<<<<Multi Lingual service from active profile>>>>>");
+		I18Controller i18Controller = (I18Controller) ctx.getBean("i18Controller");
+		System.out.println(i18Controller.getGreetingService().sayGreeting());
 
 
 
